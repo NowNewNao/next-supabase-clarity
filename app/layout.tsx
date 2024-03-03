@@ -1,4 +1,5 @@
 import "./globals.css";
+import SupabaseListener from "@/components/supabaseListener";
 
 export default function RootLayout({
 	children,
@@ -8,6 +9,9 @@ export default function RootLayout({
 	return (
 		<html lang="ja">
 			<body>
+				<div>
+					<SupabaseListener />
+				</div>
 				<main>{children}</main>
 			</body>
 		</html>
